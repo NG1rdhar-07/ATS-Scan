@@ -1,0 +1,27 @@
+JOHN DOE
+Software Engineer
+Phone: 555-123-4567
+Email: john@example.com
+
+SUMMARY
+Experienced software engineer with 5+ years developing web applications using React, Node.js, and Python. Improved application performance by 40% and reduced bug reports by 25%.
+
+EXPERIENCE
+Senior Developer, ABC Tech (2020-Present)
+• Led team of 5 developers to deliver e-commerce platform with 99.9% uptime
+• Implemented CI/CD pipeline reducing deployment time by 50%
+• Optimized database queries resulting in 30% faster page loads
+
+Web Developer, XYZ Solutions (2018-2020)
+• Developed responsive web applications using React and Redux
+• Created RESTful APIs using Node.js and Express
+• Collaborated with UX team to improve user satisfaction by 35%
+
+SKILLS
+• Languages: JavaScript, TypeScript, Python, SQL
+• Frameworks: React, Node.js, Express, Django
+• Tools: Git, Docker, AWS, Jenkins
+• Databases: MongoDB, PostgreSQL
+
+EDUCATION
+B.S. Computer Science, University of Technology (2018)
