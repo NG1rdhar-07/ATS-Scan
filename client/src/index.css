@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  /* Royal Blue Primary Theme */
+  --background: 240 18% 99%;
+  --foreground: 224 28% 12%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 224 28% 12%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 28% 12%;
+
+  /* Royal Blue Primary */
+  --primary: 224 76% 48%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 240 18% 96%;
+  --secondary-foreground: 224 20% 28%;
+
+  --muted: 240 18% 96%;
+  --muted-foreground: 224 15% 48%;
+
+  /* Tech Green Accent */
+  --accent: 142 76% 36%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 240 18% 92%;
+  --input: 240 18% 95%;
+  --ring: 224 76% 48%;
+
+  --radius: 0.75rem;
+
+  /* Custom Theme Variables */
+  --royal-blue: 224 76% 48%;
+  --royal-blue-light: 224 76% 58%;
+  --royal-blue-dark: 224 76% 38%;
+  --tech-green: 142 76% 36%;
+  --tech-green-light: 142 76% 46%;
+  --tech-green-dark: 142 76% 26%;
+  --surface: 240 20% 98%;
+  --surface-hover: 240 20% 96%;
+  --gradient-primary: linear-gradient(135deg, hsl(224, 76%, 48%) 0%, hsl(224, 76%, 58%) 100%);
+  --gradient-accent: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(142, 76%, 46%) 100%);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  --background: 224 28% 8%;
+  --foreground: 240 18% 95%;
+
+  --card: 224 25% 12%;
+  --card-foreground: 240 18% 95%;
+
+  --popover: 224 25% 12%;
+  --popover-foreground: 240 18% 95%;
+
+  --primary: 224 76% 58%;
+  --primary-foreground: 224 28% 8%;
+
+  --secondary: 224 25% 16%;
+  --secondary-foreground: 240 18% 75%;
+
+  --muted: 224 25% 16%;
+  --muted-foreground: 240 15% 65%;
+
+  --accent: 142 76% 46%;
+  --accent-foreground: 224 28% 8%;
+
+  --destructive: 0 62% 55%;
+  --destructive-foreground: 240 18% 95%;
+
+  --border: 224 25% 18%;
+  --input: 224 25% 16%;
+  --ring: 224 76% 58%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  font-variation-settings: 'opsz' 32;
+}
+
+/* AI-Powered Modern Dashboard Styles */
+.dashboard-gradient {
+  background: linear-gradient(135deg, hsl(var(--royal-blue)) 0%, hsl(var(--royal-blue-light)) 100%);
+}
+
+.tech-gradient {
+  background: var(--gradient-accent);
+}
+
+.surface-elevated {
+  background: hsl(var(--surface));
+  border: 1px solid hsl(var(--border));
+  box-shadow: var(--shadow-sm);
+}
+
+.surface-elevated:hover {
+  background: hsl(var(--surface-hover));
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-effect {
+  backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-effect {
+  background: rgba(20, 24, 37, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Modern Button Styles */
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.025em;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-accent {
+  background: var(--gradient-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.025em;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-accent:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Typography Enhancement */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.text-gradient-primary {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-accent {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card Enhancements */
+.card-modern {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: calc(var(--radius) + 2px);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-modern:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.card-elevated {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: calc(var(--radius) + 2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Progress and Score Indicators */
+.progress-primary {
+  background: var(--gradient-primary);
+}
+
+.progress-accent {
+  background: var(--gradient-accent);
+}
+
+.score-excellent {
+  color: hsl(var(--tech-green));
+}
+
+.score-good {
+  color: hsl(var(--royal-blue));
+}
+
+.score-warning {
+  color: hsl(45, 93%, 47%);
+}
+
+.score-poor {
+  color: hsl(var(--destructive));
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+.bounce-in {
+  animation: bounceIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes bounceIn {
+  0% { 
+    opacity: 0; 
+    transform: scale(0.3); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.05); 
+  }
+  70% { 
+    transform: scale(0.9); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-modern,
+  .card-elevated {
+    border-radius: var(--radius);
+  }
+  
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Focus States for Accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-color: hsl(var(--ring));
+}
