@@ -79,9 +79,9 @@ npm run dev
 
 We welcome contributions! Feel free to submit issues and pull requests. We need to fix some bugs :) ...
 
-## 📄 License
-
-MIT License - see LICENSE file for details.
+📄 License & Copyright
+© 2025 ATS-Scan Resume Analyzer. All rights reserved.
+⚠️ Do not copy, distribute, or reproduce this code without explicit permission.
 
 ---
 
