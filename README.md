@@ -1,5 +1,7 @@
 # ATS-Scan Resume Analyzer
-#### Video Demo: https://youtu.be/jMdxsvkSbd4
+#### Video Demo: ## 
+[![Watch the demo](https://img.youtube.com/vi/0cb5SRCquqg/maxresdefault.jpg)](https://youtu.be/0cb5SRCquqg)
+
 #### Description:
 
 ATS-Scan Resume Analyzer is a full-stack web application that analyzes resumes for ATS (Applicant Tracking System) compatibility. The application allows users to upload their resumes in PDF format, performs comprehensive analysis using AI, and provides detailed feedback on how to improve their resume's chances of passing through ATS systems.
