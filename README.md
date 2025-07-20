@@ -1,90 +1,105 @@
-# 🎯 ATS-Scan Resume Analyzer
+# ATS-Scan Resume Analyzer
+#### Video Demo: https://youtu.be/jMdxsvkSbd4
+#### Description:
 
-[![Watch the demo](https://img.youtube.com/vi/jMdxsvkSbd4/maxresdefault.jpg)](https://youtu.be/jMdxsvkSbd4)
+ATS-Scan Resume Analyzer is a full-stack web application that analyzes resumes for ATS (Applicant Tracking System) compatibility. The application allows users to upload their resumes in PDF format, performs comprehensive analysis using AI, and provides detailed feedback on how to improve their resume's chances of passing through ATS systems.
 
-> **Smart AI-powered resume analysis for better ATS compatibility**
+## Features
 
-Transform your resume into an ATS-friendly powerhouse. Upload, analyze, and optimize your resume with AI-driven insights to pass through Applicant Tracking Systems effortlessly.
+- Resume upload and parsing
+- AI-powered content analysis
+- Format checking and scoring
+- Keyword matching against job descriptions
+- Personalized improvement suggestions
+- Interview preparation questions
 
----
-
-## ✨ Key Features
-
-🔍 **Smart Analysis** - AI-powered content evaluation  
-📊 **ATS Scoring** - Format compatibility assessment  
-🎯 **Keyword Matching** - Job description optimization  
-💡 **Action Items** - Personalized improvement suggestions  
-🎤 **Interview Prep** - AI-generated practice questions  
-
----
-
-## 🚀 Tech Stack
+## Tech Stack
 
 **Frontend**
-- React 18 + TypeScript
-- Vite + Tailwind CSS
-- shadcn/ui + Framer Motion
+- React 18 with TypeScript
+- Vite for building
+- shadcn/ui components with Radix UI
+- Tailwind CSS for styling
+- Framer Motion for animations
 
 **Backend**
-- Node.js + Express
-- PostgreSQL + Drizzle ORM
-- AI Integration (OpenAI/MoonshotAI)
+- Node.js with Express
+- TypeScript with ES modules
+- PostgreSQL database with Neon serverless driver
+- Drizzle ORM for database operations
+- PDF parsing with pdf-parse
+- AI integration with OpenAI or MoonshotAI
 
----
+## Prerequisites
 
-## ⚡ Quick Start
+- Node.js (v18 or later)
+- PostgreSQL database
+- OpenAI API key or MoonshotAI Kimi K2 API key
 
-### Prerequisites
-- Node.js 18+
-- PostgreSQL
-- OpenAI or MoonshotAI API key
+## Setup Instructions
 
-### Installation
+### 1. Clone the repository
 
 ```bash
-# Clone & setup
 git clone <repository-url>
 cd ATS-Scan
+```
+
+### 2. Install dependencies
+
+```bash
 npm install
+```
 
-# Environment setup
+### 3. Set up environment variables
+
+Copy the example environment file and update it with your values:
+
+```bash
 cp .env.example .env
-# Edit .env with your API keys and database URL
+```
 
-# Database setup // Make sure you have PostgreSQL installed on machine locally !!
+Edit the `.env` file and update the following variables:
+- `DATABASE_URL`: Your PostgreSQL connection string
+- `OPENAI_API_KEY`: Your OpenAI API key or MoonshotAI Kimi K2 API key
+
+### 4. Set up the database
+
+Create the PostgreSQL database:
+
+```bash
 npm run db:create
-npm run db:init
+```
 
-# Start development
+Initialize the database schema:
+
+```bash
+npm run db:init
+```
+
+### 5. Start the development server
+
+```bash
 npm run dev
 ```
 
-🎉 **That's it!** Visit `http://localhost:5000`
+The application will be available at http://localhost:5000
 
----
+## Building for Production
 
-## 🛠️ Available Scripts
+```bash
+npm run build
+npm run start
+```
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run db:create` | Create PostgreSQL database |
-| `npm run db:init` | Initialize database schema |
-| `npm run db:check` | Test database connection |
+## Project Structure
 
----
+- `client/` - React frontend application
+- `server/` - Express.js backend application
+- `shared/` - Shared TypeScript types and database schema
 
-## 🤝 Contributing
+## License & Copyright
 
-We welcome contributions! Feel free to submit issues and pull requests. We need to fix some bugs :) ...
-
-📄 License & Copyright
 © 2025 ATS-Scan Resume Analyzer. All rights reserved.
-⚠️ Do not copy, distribute, or reproduce this code without explicit permission.
 
----
-
-<div align="center">
-  <strong>Made with ❤️</strong>
-</div>
+Do not copy, distribute, or reproduce this code without explicit permission.
